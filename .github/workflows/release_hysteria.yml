@@ -1,4 +1,4 @@
-name: Hysteria Plugin Release Builds
+name: Hysteria Plugin Release Build
 on:
   workflow_dispatch:
     inputs:
