@@ -84,7 +84,7 @@ jobs:
           echo "ndk.dir=${ANDROID_HOME}/ndk/25.0.8775105" >> local.properties
           export LOCAL_PROPERTIES="${{ secrets.LOCAL_PROPERTIES }}"
           ./run init action library
-          ./gradlew :plugin:hysteria:assembleOssRelease
+          ./gradlew :plugin:hysteria:assembleOssDebug
           APK=$(find plugin/hysteria/build/outputs/apk -name '*arm64-v8a*.apk')
           APK=$(dirname $APK)
           echo "APK=$APK" >> $GITHUB_ENV
